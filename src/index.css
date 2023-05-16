@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.my-container {
+  @apply mx-auto p-3 md:p-6 sm:max-w-xl md:max-w-full lg:max-w-screen-xl;
+}
+
+.btn {
+  @apply inline-flex items-center capitalize lg:text-base text-xs lg:px-6 md:px-4 px-3 lg:py-3 py-2  mb-3 font-medium text-white transition rounded border-none shadow-md md:mb-0 bg-gradient-to-r bg-[#FF3811]  hover:bg-orange-500 duration-700;
+}
+.btn-sec {
+  @apply text-lg font-medium tracking-wide px-4 py-3 rounded drop-shadow-2xl border border-[#FF3811] text-[#FF3811] hover:text-white hover:bg-[#FF3811] duration-500;
+}
+
+.sub-header {
+  @apply bg-orange-400 py-2 px-6  mt-12 font-mono text-base md:text-xl lg:text-3xl ml-3 md:ml-8 lg:ml-14 inline-block text-center mr-auto text-white;
+}
+
+.active {
+  @apply font-medium tracking-wide text-[#FF3811]  transition-colors duration-300;
+}
+
+.default {
+  @apply font-medium tracking-wide text-slate-700 hover:text-[#FF3811] transition-colors duration-300;
+}
